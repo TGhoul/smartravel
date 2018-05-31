@@ -1,0 +1,56 @@
+﻿
+#ss{margin-left:320px;}
+#container{width:960px;         
+   margin:100px auto;
+   background-color:white;}
+#top2{height:60px;
+   background-color:white;
+   text-align:right;
+   position:absolute;}
+#top2 ul {
+   list-style-type:none;
+   font-size:22px;
+   font-weight:bolder;
+   margin:0;
+   padding:0;
+   width:960px;
+   border-left:thin  solid  #f2fff8;
+   border-right:thin  solid  #f2fff8;}
+#top2 li {
+   float:left;}
+#top2 li a {
+   display:block;
+   padding-top:10px;
+   margin:8px;
+   text-decoration:none;
+   color:black;
+   border:1px solid #fff ;
+   width:132px; 
+   font-family:华文新魏;}
+#top2  li a:link #top2  li a:visited{
+   background-color:white;
+   color:black;}
+#top2  li a:hover{
+   background-color:white;
+   color:#4d5697;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

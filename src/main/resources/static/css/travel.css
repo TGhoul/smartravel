@@ -1,0 +1,97 @@
+#body{text-align:center;}
+#ss{margin-left:320px;}
+#shang{
+   float:right;
+   margin-top:10px;
+   padding:5px 2px;
+   background:white;
+   height:30px;
+   width:250px;}
+#a{text-decoration:none;
+    float:left;
+    padding-top:4px; 
+    padding-right:10px;
+    font-family:黑体;
+    font-size:16px;}
+#b{padding:0px 5px;}
+#shang a:link,#shang  a:visited{
+   background-color:white;
+   color:#2ca999;}
+#shang a:hover{
+   background-color:white;
+   color:#e75659;}
+
+#container{width:960px;         
+   margin:35px auto;
+   background-color:white;}
+
+#top2{height:60px;
+   background-color:white;
+   text-align:right;
+   position:absolute;}
+#top2 ul {
+   list-style-type:none;
+   font-size:22px;
+   font-weight:bolder;
+   margin:0;
+   padding:0;
+   width:960px;
+   border-left:thin  solid  #f2fff8;
+   border-right:thin  solid  #f2fff8;}
+#top2 li {
+   float:left;}
+#top2 li a {
+   display:block;
+   padding-top:10px;
+   margin:8px;
+   text-decoration:none;
+   color:black;
+   border:1px solid #fff ;
+   width:132px; 
+   font-family:华文新魏;}
+#top2  li a:link #top2  li a:visited{
+   background-color:white;
+   color:black;}
+#top2  li a:hover{
+   background-color:white;
+   color:#4d5697;}
+
+#img{position:center;
+ margin-top:61px;}
+#navi {
+    font-family:华文行楷;
+    font-size:25px;
+    position:absolute;
+    margin-top:36px;
+    margin-left:550px;}
+#navi ul{list-style-type:none;}
+#navi li{float:left;}
+#navi li a{width:80px;
+    height:88px;
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    color:white;
+    line-height:45px; }
+.n1{background-color:#00cccc;}
+.n2{background-color:#ff6699;}
+.n3{background-color:#99cc66;}
+.n4{background-color:#ff9933;}
+#navi  li a:hover{height:95px;
+   margin-top:-8px; 
+   line-height:40px; }
+#content{height:70px;
+ border-top:3px solid  #cc0033;
+border-bottom:3px solid  #cc0033;
+ margin:10px;}
+p{ font-family:华文行楷;
+    font-size:25px;
+    margin-left:50px;}
+#right{ position:absolute;
+    margin-top:6px;
+    margin-left:418px;
+   list-style-type:none;
+    line-height:60px;}
+#foot{background-color:white;
+   text-align:center;}
+

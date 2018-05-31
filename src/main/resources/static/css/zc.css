@@ -1,0 +1,50 @@
+﻿#body{text-align:center;}
+#ss{margin-left:320px;
+margin-top: 5px;}
+#content{
+   background-color:white;
+   border:5px solid #057380;
+   border-radius:10px;
+   position:absolute;
+   margin-top:78px;
+   margin-left:750px;
+   height:400px;
+   width:350px;
+   text-align:center;
+   padding-left:24px;}
+#m{padding:10px;
+ font-family:黑体;
+font-size:22px;}
+#n{float:right;
+padding:10px;}
+#b{margin-right:45px;}
+.zc{padding-top:26px;
+padding-right:10px;
+float:right;
+ font-family:黑体;
+font-size:16px;}
+.zc a:link,.zc a:visited{
+   color:#057380;}
+.zc a:hover{
+   color:#e75659;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
