@@ -15,13 +15,6 @@
 <a name="top"></a>
 <table width="100%">
     <tr>
-        <td align="left">
-            <form id="ss" action="" name="searchFrm" method="post" style="font-size:0;">
-                <input type="text" style="width:500px;height:33px;"/>
-                <input type="submit" value="搜 索"
-                       style="width:60px;height:40px;background:#4b589e;color:white;font-size:18px; font-family:黑体;border:none"/>
-            </form>
-        </td>
         <td align="right" id="shang">
             <#if Session.userId??>
             <a href="#" id="a"><b>${Session.username}</b>&nbsp;| </a>
@@ -30,12 +23,6 @@
             <a href="/smartravel/login" id="a"><b>登录</b>&nbsp;| </a>
             <a href="/smartravel/join" id="a"><b>注册</b></a>
             </#if>
-            <img id="b" src="/static/images/wb1.png" height="25" width="25"
-                 onmouseover="this.src='/static/images/wb2.png';" onmouseout="this.src='/static/images/wb1.png';"/>
-            <img id="b" src="/static/images/qq1.png" height="25" width="25"
-                 onmouseover="this.src='/static/images/qq2.png';" onmouseout="this.src='/static/images/qq1.png';"/>
-            <img id="b" src="/static/images/wx1.png" height="25" width="25"
-                 onmouseover="this.src='/static/images/wx2.png';" onmouseout="this.src='/static/images/wx1.png';"/>
         </td>
     </tr>
 </table>
@@ -44,7 +31,7 @@
     <div id="top2">
         <ul>
             <li><a href="/smartravel/index">网站首页</a></li>
-            <li><a href="/smartravel/10-25">15-25岁</a></li>
+            <li><a href="/smartravel/10-25">10-25岁</a></li>
             <li><a href="/smartravel/25-40">25-40岁</a></li>
             <li><a href="/smartravel/hc">火车票</a></li>
             <li><a href="/smartravel/jd">酒店预定</a></li>
@@ -307,6 +294,9 @@
                 </tr>
             </table>
         </div>
+    </div>
+     <div id="foot">
+        <img src="/static/images/p8.jpg" width="960" height="70"/>
     </div>
 
     <a href="#top" style="display:block;position:fixed;right:50px; bottom:20px;">

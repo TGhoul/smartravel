@@ -8,18 +8,6 @@
 </head>
 <body style="background:url(/static/images/dl.jpg) center 0 no-repeat ;width:100%;height:100%;">
 <a name="top"></a>
-<table width="100%">
-    <tr>
-        <td align="left">
-            <form id="ss" action="" name="searchFrm" method="post" style="font-size:0;">
-                <input type="text" style="width:500px;height:33px;"/>
-                <input type="submit" value="搜 索"
-                       style="width:60px;height:40px;background:#4b589e;color:white;font-size:18px; font-family:黑体;border:none"/>
-            </form>
-        </td>
-    </tr>
-</table>
-
 <div id="content">
     <form>
         <table>
@@ -50,7 +38,7 @@
             </tr>
             <tr>
                 <td><input id="btn" type="button" value="注 册"
-                           style="width:305px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 10px;"/>
+                           style="width:305px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 8px;"/>
                 </td>
             </tr>
 

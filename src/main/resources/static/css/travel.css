@@ -1,5 +1,5 @@
 #body{text-align:center;}
-#ss{margin-left:320px;}
+
 #shang{
    float:right;
    margin-top:10px;
@@ -11,7 +11,7 @@
     float:left;
     padding-top:4px; 
     padding-right:10px;
-    font-family:黑体;
+    font-family:榛戜綋;
     font-size:16px;}
 #b{padding:0px 5px;}
 #shang a:link,#shang  a:visited{
@@ -48,7 +48,7 @@
    color:black;
    border:1px solid #fff ;
    width:132px; 
-   font-family:华文新魏;}
+   font-family:鍗庢枃鏂伴瓘锛泒
 #top2  li a:link #top2  li a:visited{
    background-color:white;
    color:black;}
@@ -59,7 +59,7 @@
 #img{position:center;
  margin-top:61px;}
 #navi {
-    font-family:华文行楷;
+    font-family:鍗庢枃琛屾シ;
     font-size:25px;
     position:absolute;
     margin-top:36px;
@@ -84,7 +84,7 @@
  border-top:3px solid  #cc0033;
 border-bottom:3px solid  #cc0033;
  margin:10px;}
-p{ font-family:华文行楷;
+p{ font-family:鍗庢枃琛屾シ;
     font-size:25px;
     margin-left:50px;}
 #right{ position:absolute;
@@ -93,5 +93,6 @@ p{ font-family:华文行楷;
    list-style-type:none;
     line-height:60px;}
 #foot{background-color:white;
-   text-align:center;}
+   text-align:center;
+    margin-top: 10px;}
 

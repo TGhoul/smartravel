@@ -1,9 +1,30 @@
 ﻿
-#ss{margin-left:320px;}
+
+#shang{
+   float:right;
+   margin-top:10px;
+   padding:5px 2px;
+   background:white;
+   height:30px;
+   width:250px;}
+#a{text-decoration:none;
+    float:left;
+    padding-top:4px; 
+    padding-right:10px;
+    font-family:黑体;
+    font-size:16px;}
+#b{padding:0px 5px;}
+#shang a:link,#shang  a:visited{
+   background-color:white;
+   color:#2ca999;}
+#shang a:hover{
+   background-color:white;
+   color:#e75659;}
+
 #container{width:960px;         
    margin:0 auto;
    background-color:white;}
-#top2{height:58px;
+#top2{height:60px;
    background-color:white;
    text-align:right;
    position:absolute;}
