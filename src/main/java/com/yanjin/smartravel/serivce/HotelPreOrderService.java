@@ -2,6 +2,7 @@ package com.yanjin.smartravel.serivce;
 
 import com.yanjin.smartravel.domain.HotelPreOrder;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,4 +20,7 @@ public interface HotelPreOrderService extends JpaRepository<HotelPreOrder, Long>
      * @return
      */
     List<HotelPreOrder> findHotelPreOrdersByUserId(Long userId);
+
+    @Query("FROM HotelPreOrder WHERE status = 2 ORDER BY id DESC ")
+    List<HotelPreOrder> findAllOrderById();
 }

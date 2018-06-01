@@ -7,27 +7,29 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 /**
  * @author zpj
- * @date 2018/5/20
+ * @date 2018/6/1
  */
 @Data
 @Entity
 @DynamicUpdate
-public class User {
+public class ScenicPreOrder {
 
-    /** 主键 */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /** 用户名 */
-    private String username;
+    private String scenicName;
 
-    /** 密码 */
-    private String password;
+    private Double price;
 
-    /** 性别 */
-    private int gender;
+    private Integer status;
+
+    private Long userId;
+
+    private Date createTime;
+
 }

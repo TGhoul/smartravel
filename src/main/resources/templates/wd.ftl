@@ -220,6 +220,18 @@
         document.getElementById(currentNode).style.color="red"; document.getElementById("about"+currentNode).style.display = "block";
     };
 
+    function formatStatus(status) {
+        if (status === 1) {
+            return '预定成功';
+        } else if (status === 2) {
+            return '退款中';
+        } else if (status === 3) {
+            return '退款失败';
+        } else {
+            return '';
+        }
+    }
+
     $('.order').on('click', function () {
         var orderType = Number($(this).attr('data-type'));
         //全部订单
@@ -228,7 +240,7 @@
         } else if (orderType === 2) {
             hotelOrder();
         } else if (orderType === 3) {
-
+            scenicOrder();
         } else {
             trainOrder();
         }
@@ -238,32 +250,80 @@
         var html = '';
         var hotelList;
         var trainList;
+        var scenicList;
         $.post('/smartravel/hotel/order/list', function (res) {
             if (res.isSuccess === 1) {
                 hotelList = res.data;
                 $.post('/smartravel/train/order/list', function (res) {
                     if (res.isSuccess === 1) {
                         trainList = res.data;
-                        for (var i = 0; i < hotelList.length; i++) {
-                            html += '<tr >\n' +
-                                    '    <td id="m">'+ hotelList[i].hotelName +'</td>\n' +
-                                    '    <td id="m">¥'+ hotelList[i].price +'</td>\n' +
-                                    '    <td id="m">预定成功</td>\n' +
-                                    '</tr>';
-                        }
+                        $.post('/smartravel/scenic/order/list', function (res) {
+                            if (res.isSuccess === 1) {
+                                scenicList = res.data;
+                                for (var i = 0; i < hotelList.length; i++) {
+                                    if (hotelList[i].status !== 1) {
+                                        html += '<tr >\n' +
+                                                '    <td id="m">'+ hotelList[i].hotelName +'</td>\n' +
+                                                '    <td id="m">¥'+ hotelList[i].price +'</td>\n' +
+                                                '    <td id="m">'+ formatStatus(hotelList[i].status) +'</td>\n' +
+                                                '    <td id="m"><a href="#"></a></td>' +
+                                                '</tr>';
+                                    } else {
+                                        html += '<tr >\n' +
+                                                '    <td id="m">'+ hotelList[i].hotelName +'</td>\n' +
+                                                '    <td id="m">¥'+ hotelList[i].price +'</td>\n' +
+                                                '    <td id="m">'+ formatStatus(hotelList[i].status) +'</td>\n' +
+                                                '    <td id="m" class="refund-btn" data-type="1" data-id="'+ hotelList[i].id +'"><a href="#">申请退款</a></td>' +
+                                                '</tr>';
+                                    }
 
-                        for (var j = 0; j < trainList.length; j++) {
-                            html += '<tr >\n' +
-                                    '    <td id="m">'+ trainList[j].name +'<br/>'+ trainList[j].startTime +'——'+ trainList[j].endTime +'<br/>商务座</td>\n' +
-                                    '    <td id="m">¥'+ trainList[j].price +'</td>\n' +
-                                    '    <td id="m">预定成功</td>\n' +
-                                    '</tr>';
-                        }
+                                }
 
-                        $('.order-list').empty();
-                        $('.order-list').append(html);
+                                for (var j = 0; j < scenicList.length; j++) {
+                                    if (scenicList[j].status !== 1) {
+                                        html += '<tr>\n' +
+                                                '    <td id="m">'+ scenicList[j].scenicName +'</td>\n' +
+                                                '    <td id="m">¥'+ scenicList[j].price +'</td>\n' +
+                                                '    <td id="m">'+ formatStatus(scenicList[j].status) +'</td>\n' +
+                                                '    <td id="m"><a href="#"></a></td>' +
+                                                '</tr>';
+                                    } else {
+                                        html += '<tr>\n' +
+                                                '    <td id="m">'+ scenicList[j].scenicName +'</td>\n' +
+                                                '    <td id="m">¥'+ scenicList[j].price +'</td>\n' +
+                                                '    <td id="m">'+ formatStatus(scenicList[j].status) +'</td>\n' +
+                                                '    <td id="m" class="refund-btn" data-type="2" data-id="'+ scenicList[j].id +'"><a href="#">申请退款</a></td>' +
+                                                '</tr>';
+                                    }
+                                }
+
+                                for (var k = 0; k < trainList.length; k++) {
+                                    if (trainList[k].status !== 1) {
+                                        html += '<tr >\n' +
+                                                '    <td id="m">'+ trainList[k].name +'<br/>'+ trainList[k].startTime +'——'+ trainList[k].endTime +'<br/>商务座</td>\n' +
+                                                '    <td id="m">¥'+ trainList[k].price +'</td>\n' +
+                                                '    <td id="m">'+ formatStatus(trainList[k].status) +'</td>\n' +
+                                                '    <td id="m"><a href="#"></a></td>' +
+                                                '</tr>';
+                                    } else {
+                                        html += '<tr >\n' +
+                                                '    <td id="m">'+ trainList[k].name +'<br/>'+ trainList[k].startTime +'——'+ trainList[k].endTime +'<br/>商务座</td>\n' +
+                                                '    <td id="m">¥'+ trainList[k].price +'</td>\n' +
+                                                '    <td id="m">'+ formatStatus(trainList[k].status) +'</td>\n' +
+                                                '    <td id="m" class="refund-btn" data-type="3" data-id="'+ trainList[k].id +'"><a href="#">申请退款</a></td>' +
+                                                '</tr>';
+                                    }
+
+                                }
+
+                                $('.order-list').empty();
+                                $('.order-list').append(html);
+                            }
+                        });
                     }
                 });
+            } else {
+                alert(res.errmsg);
             }
         });
     }
@@ -275,11 +335,22 @@
                 var hotelList = res.data;
                 var html = '';
                 for (var i = 0; i < hotelList.length; i++) {
-                    html += '<tr >\n' +
-                            '    <td id="m">'+ hotelList[i].hotelName +'</td>\n' +
-                            '    <td id="m">¥'+ hotelList[i].price +'</td>\n' +
-                            '    <td id="m">预定成功</td>\n' +
-                            '</tr>';
+                    if (hotelList[i].status !== 1) {
+                        html += '<tr >\n' +
+                                '    <td id="m">'+ hotelList[i].hotelName +'</td>\n' +
+                                '    <td id="m">¥'+ hotelList[i].price +'</td>\n' +
+                                '    <td id="m">'+ formatStatus(hotelList[i].status) +'</td>\n' +
+                                '    <td id="m"><a href="#"></a></td>' +
+                                '</tr>';
+                    } else {
+                        html += '<tr >\n' +
+                                '    <td id="m">'+ hotelList[i].hotelName +'</td>\n' +
+                                '    <td id="m">¥'+ hotelList[i].price +'</td>\n' +
+                                '    <td id="m">'+ formatStatus(hotelList[i].status) +'</td>\n' +
+                                '    <td id="m" class="refund-btn" data-type="1" data-id="'+ hotelList[i].id +'"><a href="#">申请退款</a></td>' +
+                                '</tr>';
+                    }
+
                 }
                 $('.order-list').empty();
                 $('.order-list').append(html);
@@ -293,11 +364,22 @@
                 var trainList = res.data;
                 var html = '';
                 for (var j = 0; j < trainList.length; j++) {
-                    html += '<tr >\n' +
-                            '    <td id="m">'+ trainList[j].name +'<br/>'+ trainList[j].startTime +'——'+ trainList[j].endTime +'<br/>商务座</td>\n' +
-                            '    <td id="m">¥'+ trainList[j].price +'</td>\n' +
-                            '    <td id="m">预定成功</td>\n' +
-                            '</tr>';
+                    if (trainList[j].status !== 1) {
+                        html += '<tr >\n' +
+                                '    <td id="m">'+ trainList[j].name +'<br/>'+ trainList[j].startTime +'——'+ trainList[j].endTime +'<br/>商务座</td>\n' +
+                                '    <td id="m">¥'+ trainList[j].price +'</td>\n' +
+                                '    <td id="m">'+ formatStatus(trainList[j].status) +'</td>\n' +
+                                '    <td id="m"><a href="#"></a></td>' +
+                                '</tr>';
+                    } else {
+                        html += '<tr >\n' +
+                                '    <td id="m">'+ trainList[j].name +'<br/>'+ trainList[j].startTime +'——'+ trainList[j].endTime +'<br/>商务座</td>\n' +
+                                '    <td id="m">¥'+ trainList[j].price +'</td>\n' +
+                                '    <td id="m">'+ formatStatus(trainList[j].status) +'</td>\n' +
+                                '    <td id="m" class="refund-btn" data-type="3" data-id="'+ trainList[j].id +'"><a href="#">申请退款</a></td>' +
+                                '</tr>';
+                    }
+
                 }
 
                 $('.order-list').empty();
@@ -305,6 +387,53 @@
             }
         });
     }
+
+    function scenicOrder() {
+        $.post('/smartravel/scenic/order/list', function (res) {
+            if (res.isSuccess === 1) {
+                var scenicList = res.data;
+                var html = '';
+                for (var j = 0; j < scenicList.length; j++) {
+                    if (scenicList[j].status !== 1) {
+                        html += '<tr>\n' +
+                                '    <td id="m">'+ scenicList[j].scenicName +'</td>\n' +
+                                '    <td id="m">¥'+ scenicList[j].price +'</td>\n' +
+                                '    <td id="m">'+ formatStatus(scenicList[j].status) +'</td>\n' +
+                                '    <td id="m"><a href="#"></a></td>' +
+                                '</tr>';
+                    } else {
+                        html += '<tr>\n' +
+                                '    <td id="m">'+ scenicList[j].scenicName +'</td>\n' +
+                                '    <td id="m">¥'+ scenicList[j].price +'</td>\n' +
+                                '    <td id="m">'+ formatStatus(scenicList[j].status) +'</td>\n' +
+                                '    <td id="m" class="refund-btn" data-type="2" data-id="'+ scenicList[j].id +'"><a href="#">申请退款</a></td>' +
+                                '</tr>';
+                    }
+                }
+
+                $('.order-list').empty();
+                $('.order-list').append(html);
+            }
+        });
+    }
+
+    $('body').on('click', '.refund-btn', function () {
+        if (confirm('确认申请退款？')) {
+            var $btn = $(this);
+            //申请退款
+            var type = $btn.attr('data-type');
+            var orderId = $btn.attr('data-id');
+            $.post('/smartravel/order/refund', {type: type, orderId: orderId}, function (res) {
+                if (res.isSuccess === 1) {
+                    alert('申请成功，请等待工作人员审核。');
+                    location.href = '/smartravel/wd';
+                } else {
+                    alert('申请失败');
+                }
+            });
+        }
+    });
+
 </script>
 </body>
 </html>

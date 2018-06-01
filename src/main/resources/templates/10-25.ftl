@@ -52,11 +52,11 @@
         <img src="/static/images/ylc.jpg" width="215" height="455"/>
         <table class="table2">
             <tr>
-                <td>
-                    <a href="/smartravel/dsn">
+                <td onclick="location.href = '/smartravel/dsn';">
+                    <a href="#">
                         <img src="/static/images/dsn.jpg" width="210" height="120"/>
                         <div id="lx">
-                            <a href="/smartravel/dsn" id="e">
+                            <a href="" id="e">
                                 上海迪士尼-2日游
                             </a>
                         </div>

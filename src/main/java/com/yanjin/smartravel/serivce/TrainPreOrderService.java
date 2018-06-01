@@ -2,6 +2,7 @@ package com.yanjin.smartravel.serivce;
 
 import com.yanjin.smartravel.domain.TrainPreOrder;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,4 +21,7 @@ public interface TrainPreOrderService extends
      * @return
      */
     List<TrainPreOrder> findTrainPreOrdersByUserId(Long userId);
+
+    @Query("FROM TrainPreOrder WHERE status = 2 ORDER BY id DESC")
+    List<TrainPreOrder> findAllOrderById();
 }

@@ -114,11 +114,38 @@ public class MainController {
     }
 
     /**
-     * 首页入口
+     * 我的入口
      * @return
      */
     @RequestMapping("/wd")
     public String wd() {
         return "wd";
+    }
+
+    /**
+     * 管理员入口
+     * @return
+     */
+    @RequestMapping("/admin")
+    public String admin() {
+        return "adminlogin";
+    }
+
+    /**
+     * 管理员入口
+     * @return
+     */
+    @RequestMapping("/admin/index")
+    public String adminIndex() {
+        return "admin";
+    }
+
+    /**
+     * 管理员入口
+     * @return
+     */
+    @RequestMapping("/stln")
+    public String stln() {
+        return "stln";
     }
 }

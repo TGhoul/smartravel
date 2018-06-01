@@ -1,6 +1,7 @@
 package com.yanjin.smartravel.domain;
 
 import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ import java.util.Date;
  */
 @Data
 @Entity
+@DynamicUpdate
 public class HotelPreOrder {
 
     @Id
@@ -29,4 +31,6 @@ public class HotelPreOrder {
     private String address;
 
     private Date createTime;
+
+    private Integer status;
 }

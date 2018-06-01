@@ -7,18 +7,18 @@
 <body style="background:url(/static/images/stln.jpg) center 0 no-repeat ;width:100%;height:100%;">
 <a name="top"></a>
 <table width="100%">
-       <tr>
-          <td align="right" id="shang">
+    <tr>
+        <td align="right" id="shang">
             <#if Session.userId??>
-            <a href="#" id="a"><b>${Session.username}</b>&nbsp;| </a>
-            <a href="/smartravel/wd" id="a"><b>我的预定</b></a>
+                <a href="#" id="a"><b>${Session.username}</b>&nbsp;| </a>
+                <a href="/smartravel/wd" id="a"><b>我的预定</b></a>
             <#else>
             <a href="/smartravel/login" id="a"><b>登录</b>&nbsp;| </a>
             <a href="/smartravel/join" id="a"><b>注册</b></a>
             </#if>
 
-           </td>
-        </tr>
+        </td>
+    </tr>
 </table>
 
 
@@ -34,9 +34,21 @@
         </ul>
     </div>
 </div>
-<input type="submit" value="立即预定"
+<input class="btn" data-id="2" type="button" value="立即预定"
        style="width:120px;height:45px;background:#f15609;color:white;font-size:18px; font-family:黑体;  border:1px solid #ba460c; border-radius:5px; margin-top: 210px;margin-left: 1070px;"/>
 
-
+<script src="/static/js/jquery-1.7.2.min.js"></script>
+<script>
+    $('.btn').on('click', function () {
+        var scenicId = $(this).attr('data-id');
+        $.post('/smartravel/scenic/preorder', {scenicId: scenicId}, function (res) {
+            if (res.isSuccess === 1) {
+                alert('预定成功');
+            } else {
+                alert(res.errmsg);
+            }
+        });
+    });
+</script>
 </body>
 </html>

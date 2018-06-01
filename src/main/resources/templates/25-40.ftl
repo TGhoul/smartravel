@@ -113,8 +113,8 @@
             <img src="/static/images/f1.jpg"/>
             <table class="table2">
                 <tr>
-                    <td>
-                        <a href="/smartravel/stln">
+                    <td onclick="location.href = '/smartravel/stln';">
+                        <a href="#">
                             <img src="/static/images/hi3.jpg" width="206" height="315"/>
                             <div id="lx">
                                 <a href="/smartravel/stln" id="e">

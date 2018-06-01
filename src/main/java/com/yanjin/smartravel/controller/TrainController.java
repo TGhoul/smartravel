@@ -96,6 +96,7 @@ public class TrainController {
             order.setPrice(1748D);
         }
 
+        order.setStatus(1);
         trainPreOrderService.save(order);
         restResponse.setIsSuccess(1);
         return restResponse;

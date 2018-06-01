@@ -123,7 +123,7 @@ public class HotelController {
             order.setPrice(254D);
             order.setUserId(userId);
         }
-
+        order.setStatus(1);
         hotelPreOrderService.save(order);
         restResponse.setIsSuccess(1);
         return restResponse;

@@ -34,9 +34,22 @@
         </ul>
     </div>
 </div>
-<input type="submit" value="立即预定"
+<input class="btn" data-id="1" type="button" value="立即预定"
        style="width:120px;height:45px;background:#f15609;color:white;font-size:18px; font-family:黑体;  border:1px solid #ba460c; border-radius:5px; margin-top: 247px;margin-left: 1010px;"/>
 
 
 </body>
+<script src="/static/js/jquery-1.7.2.min.js"></script>
+<script>
+    $('.btn').on('click', function () {
+        var scenicId = $(this).attr('data-id');
+        $.post('/smartravel/scenic/preorder', {scenicId: scenicId}, function (res) {
+            if (res.isSuccess === 1) {
+                alert('预定成功');
+            } else {
+                alert(res.errmsg);
+            }
+        });
+    });
+</script>
 </html>
