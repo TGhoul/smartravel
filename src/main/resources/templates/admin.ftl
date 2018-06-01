@@ -82,7 +82,7 @@
                     html += '<tr>\n' +
                             '    <td id="m">'+ scenicList[j].scenicName +'</td>\n' +
                             '    <td id="m">退款中</td>\n' +
-                            '    <td id="m" class="refund-btn" data-type="1" data-id="'+ scenicList[j].id +'"><a href="#">审批退款</a></td>\n' +
+                            '    <td id="m" class="refund-btn" data-type="2" data-id="'+ scenicList[j].id +'"><a href="#">审批退款</a></td>\n' +
                             '</tr>';
                 }
 
@@ -90,7 +90,7 @@
                     html += '<tr>\n' +
                             '    <td id="m">'+ trainList[k].name +'</td>\n' +
                             '    <td id="m">退款中</td>\n' +
-                            '    <td id="m" class="refund-btn" data-type="1" data-id="'+ trainList[k].id +'"><a href="#">审批退款</a></td>\n' +
+                            '    <td id="m" class="refund-btn" data-type="3" data-id="'+ trainList[k].id +'"><a href="#">审批退款</a></td>\n' +
                             '</tr>';
                 }
 
