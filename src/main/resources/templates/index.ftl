@@ -54,14 +54,14 @@
                     <img src="/static/images/价格1.jpg" />
                 </a>
             </td>
-            <td>
-                <a href="dsn.html" target="-blank"><img src="/static/images/dsn.jpg" width="213" height="137"/>
+            <td onclick="location.href = '/smartravel/dsn';">
+                <a href="/smartravel/dsn" target="-blank"><img src="/static/images/dsn.jpg" width="213" height="137"/>
                     <div id="lx">
-                        <a href="dsn.html" target="-blank" id="e">
+                        <a href="/smartravel/dsn" target="-blank" id="e">
                             上海迪士尼-1日游
                         </a>
                     </div>
-                    <img src="/static/images/价格2.jpg" />
+                    <img src="/static/images/价格3.jpg" />
                 </a>
             </td>
             <td>
@@ -74,14 +74,14 @@
                     <img src="/static/images/价格1.jpg" />
                 </a>
             </td>
-            <td>
-                <a href="stln.html" target="-blank"><img src="/static/images/hl5.jpg" width="213" height="137"/>
+            <td onclick="location.href = '/smartravel/stln';">
+                <a href="/smartravel/stln" target="-blank"><img src="/static/images/hl5.jpg" width="213" height="137"/>
                     <div id="lx">
-                        <a href="stln.html" target="-blank" id="e">
+                        <a href="/smartravel/stln" target="-blank" id="e">
                             圣托里尼婚纱旅拍5晚7日
                         </a>
                     </div>
-                    <img src="/static/images/价格3.jpg" />
+                    <img src="/static/images/价格2.jpg" />
                 </a>
             </td>
             <td>
