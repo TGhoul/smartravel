@@ -61,7 +61,7 @@
                             上海迪士尼-1日游
                         </a>
                     </div>
-                    <img src="/static/images/价格1.jpg" />
+                    <img src="/static/images/价格2.jpg" />
                 </a>
             </td>
             <td>
@@ -81,7 +81,7 @@
                             圣托里尼婚纱旅拍5晚7日
                         </a>
                     </div>
-                    <img src="/static/images/价格1.jpg" />
+                    <img src="/static/images/价格3.jpg" />
                 </a>
             </td>
             <td>

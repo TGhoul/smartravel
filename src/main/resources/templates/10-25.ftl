@@ -60,7 +60,7 @@
                                 上海迪士尼-2日游
                             </a>
                         </div>
-                        <img src="/static/images/价格1.jpg"/>
+                        <img src="/static/images/价格3.jpg"/>
                     </a>
                 </td>
 
