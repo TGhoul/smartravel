@@ -37,26 +37,26 @@
         </table>
         <div id="aboutcontent2">
             <table class="order-list">
-                <tr>
-                    <td id="m">上海徐汇云睿酒店</td>
-                    <td id="m">预定成功</td>
-                    <td id="m"><a href="#">审批退款</a></td>
-                </tr>
-                <tr>
-                    <td id="m">上海延安酒店</td>
-                    <td id="m">预定成功</td>
-                    <td id="m"><a href="#">审批退款</a></td>
-                </tr>
-                <tr>
-                    <td id="m">杭州蝶来望湖宾馆</td>
-                    <td id="m">预定成功</td>
-                    <td id="m"><a href="#">审批退款</a></td>
-                </tr>
-                <tr>
-                    <td id="m">浙江梅地亚宾馆</td>
-                    <td id="m">预定成功</td>
-                    <td id="m"><a href="#">审批退款</a></td>
-                </tr>
+                <#--<tr>-->
+                    <#--<td id="m">上海徐汇云睿酒店</td>-->
+                    <#--<td id="m">预定成功</td>-->
+                    <#--<td id="m"><a href="#">审批退款</a></td>-->
+                <#--</tr>-->
+                <#--<tr>-->
+                    <#--<td id="m">上海延安酒店</td>-->
+                    <#--<td id="m">预定成功</td>-->
+                    <#--<td id="m"><a href="#">审批退款</a></td>-->
+                <#--</tr>-->
+                <#--<tr>-->
+                    <#--<td id="m">杭州蝶来望湖宾馆</td>-->
+                    <#--<td id="m">预定成功</td>-->
+                    <#--<td id="m"><a href="#">审批退款</a></td>-->
+                <#--</tr>-->
+                <#--<tr>-->
+                    <#--<td id="m">浙江梅地亚宾馆</td>-->
+                    <#--<td id="m">预定成功</td>-->
+                    <#--<td id="m"><a href="#">审批退款</a></td>-->
+                <#--</tr>-->
             </table>
         </div>
     </div>
