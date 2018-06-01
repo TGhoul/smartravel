@@ -226,7 +226,7 @@
         } else if (status === 2) {
             return '退款中';
         } else if (status === 3) {
-            return '退款失败';
+            return '退款成功';
         } else {
             return '';
         }
