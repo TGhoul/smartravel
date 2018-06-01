@@ -2,25 +2,25 @@
 <html>
 <head>
     <title>智慧旅游-火车票预订</title>
-    <link href="/static/css/dsn.css" rel="stylesheet"/>
+    <link href="/static/css/hc.css" rel="stylesheet"/>
 </head>
 <body style="background:url(/static/images/bg.jpg) center 0 no-repeat ;width:100%;height:100%;">
 <a name="top"></a>
 
 <table width="100%">
-       <tr>
-          <td align="right" id="shang">
+    <tr>
+        <td align="right" id="shang">
             <#if Session.userId??>
-            <a href="#" id="a"><b>${Session.username}</b>&nbsp;| </a>
-            <a href="/smartravel/wd" id="a"><b>我的预定</b></a>
+                <a href="#" id="a"><b>${Session.username}</b>&nbsp;| </a>
+                <a href="/smartravel/wd" id="a"><b>我的预定</b></a>
             <#else>
             <a href="/smartravel/login" id="a"><b>登录</b>&nbsp;| </a>
             <a href="/smartravel/join" id="a"><b>注册</b></a>
             </#if>
-
-           </td>
-        </tr>
+        </td>
+    </tr>
 </table>
+
 
 <div id="container">
     <div id="top2">

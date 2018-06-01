@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>智慧旅游-迪士尼一日游</title>
-    <link href="dsn.css" rel="stylesheet">
+    <title>智慧旅游-圣托里尼婚纱游</title>
+    <link href="/static/css/stln.css" rel="stylesheet">
 </head>
 <body style="background:url(/static/images/stln.jpg) center 0 no-repeat ;width:100%;height:100%;">
 <a name="top"></a>

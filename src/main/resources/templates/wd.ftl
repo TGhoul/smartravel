@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>智慧旅游-我的订单</title>
+    <title>智慧旅游-我的预定</title>
     <link href="/static/css/wd.css" rel="stylesheet" type="text/css" />
     <script src="/static/js/jquery-1.7.2.min.js"></script>
 </head>
@@ -50,6 +50,7 @@
                 <td id="n">商品信息</td>
                 <td id="n">实付款</td>
                 <td id="n">交易状态</td>
+                <td id="n">申请退款</td>
             </tr>
         </table>
         <div id="aboutcontent1">
@@ -59,61 +60,74 @@
                     <td id="m">上海徐汇云睿酒店</td>
                     <td id="m">¥398</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
+
                 </tr>
                 <tr >
                     <td id="m">上海延安酒店</td>
                     <td id="m">¥498</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">杭州蝶来望湖宾馆</td>
                     <td id="m">¥688</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">浙江梅地亚宾馆</td>
                     <td id="m">¥999</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">上海迪士尼一日游</td>
                     <td id="m">¥268</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">圣托里尼婚纱旅拍5晚7日游</td>
                     <td id="m">¥14800</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">北京南到上海虹桥 <br/>08:05——13:47 <br/>二等座</td>
                     <td id="m">¥553</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">北京南到上海虹桥 <br/>08:05——13:47 <br/>一等座</td>
                     <td id="m">¥933</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">北京南到上海虹桥 <br/>08:05——13:47 <br/>商务座</td>
                     <td id="m">¥1748</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">北京南到上海虹桥<br/> 08:35——14:22 <br/>二等座</td>
                     <td id="m">¥553</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">北京南到上海虹桥<br/> 08:35——14:22 <br/>一等座</td>
                     <td id="m">¥933</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
                 <tr >
                     <td id="m">北京南到上海虹桥<br/> 08:35——14:22 <br/>商务座</td>
                     <td id="m">¥1748</td>
                     <td id="m">预定成功</td>
+                    <td id="m"><a href="#">退款</a></td>
                 </tr>
             </table>
         </div>

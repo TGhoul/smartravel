@@ -114,10 +114,10 @@
             <table class="table2">
                 <tr>
                     <td>
-                        <a href="stln.html">
+                        <a href="/smartravel/stln">
                             <img src="/static/images/hi3.jpg" width="206" height="315"/>
                             <div id="lx">
-                                <a href="stln.html" id="e">
+                                <a href="/smartravel/stln" id="e">
                                     圣托里尼婚纱旅拍5晚7日
                                 </a>
                             </div>

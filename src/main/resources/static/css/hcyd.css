@@ -1,4 +1,5 @@
-﻿
+﻿#body{text-align:center;}
+
 #shang{
    float:right;
    margin-top:10px;
@@ -7,11 +8,11 @@
    height:30px;
    width:250px;}
 #a{text-decoration:none;
-    float:left;
-    padding-top:4px; 
-    padding-right:10px;
-    font-family:黑体;
-    font-size:16px;}
+   float:left;
+   padding-top:4px;
+   padding-right:10px;
+   font-family:黑体;
+   font-size:16px;}
 #b{padding:0px 5px;}
 #shang a:link,#shang  a:visited{
    background-color:white;
@@ -19,10 +20,12 @@
 #shang a:hover{
    background-color:white;
    color:#e75659;}
-#container{width:960px;         
-   margin:20px auto;
+
+#container{width:960px;
+   margin:35px auto;
    background-color:white;}
-#top2{height:58px;
+
+#top2{height:60px;
    background-color:white;
    text-align:right;
    position:absolute;}
@@ -44,7 +47,7 @@
    text-decoration:none;
    color:black;
    border:1px solid #fff ;
-   width:132px; 
+   width:132px;
    font-family:华文新魏;}
 #top2  li a:link #top2  li a:visited{
    background-color:white;
@@ -54,7 +57,7 @@
    color:#4d5697;}
 #foot{
    text-align:center;
-   margin-top: 400px;}
+   margin-top:400px;}
 
 
 

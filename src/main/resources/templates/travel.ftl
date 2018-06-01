@@ -35,15 +35,15 @@
 
     <div id="navi">
         <ul>
-            <li><a class="n1" href="">当季<br/>热门</a></li>
-            <li><a class="n2" href="">主题<br/>推荐</a></li>
-            <li><a class="n3" href="">摄影<br/>贴图</a></li>
-            <li><a class="n4" href="">达人<br/>经验</a></li>
+            <li><a class="n1" href="#1">当季<br/>热门</a></li>
+            <li><a class="n2" href="#2">主题<br/>推荐</a></li>
+            <li><a class="n3" href="#3">摄影<br/>贴图</a></li>
+            <li><a class="n4" href="#4">达人<br/>经验</a></li>
         </ul>
     </div>
     <img id="img" src="/static/images/p20.jpg"/>
     <div id="content">
-        <p>当季热门</p>
+        <a name="1" > <p>当季热门</p></a>
     </div>
     <div id="right">
         <li><a href="" title="大理"><img src="/static/images/p23.jpg" width="240" height="140"/></a>&nbsp;&nbsp;
@@ -53,7 +53,7 @@
     </div>
     &nbsp;&nbsp;<a href="" title="三亚"><img src="/static/images/p21.jpg" height="314" width="380"/></a>
     <div id="content">
-        <p>主题推荐</p>
+        <a name="2" ><p>主题推荐</p></a>
     </div>
     &nbsp;&nbsp;<a href="" title="户外活动"><img src="/static/images/zt1.png" width="180"/></a>
     <a href="" title="人文探索"><img src="/static/images/zt2.png" width="180"/></a>
@@ -61,7 +61,7 @@
     <a href="" title="拓展提升"><img src="/static/images/zt4.png" width="180"/></a>
     <a href="" title="健康养生"><img src="/static/images/zt5.png" width="180"/></a>
     <div id="content">
-        <p>摄影贴图</p>
+        <a name="3" ><p>摄影贴图</p></a>
     </div>
     &nbsp;<img src="/static/images/sy1.jpg" height="314" width="230"/>
     <img src="/static/images/sy2.png" height="314" width="230"/>
@@ -72,7 +72,7 @@
     <img src="/static/images/sy7.jpg" height="314" width="230"/>
     <img src="/static/images/sy8.jpg" height="314" width="230"/>
     <div id="content">
-        <p>达人经验</p>
+        <a name="4" ><p>达人经验</p></a>
     </div>
     &nbsp;&nbsp;<img src="/static/images/dr1.png" height="314" width="930"/>
     &nbsp;&nbsp;<img src="/static/images/dr2.png" height="314" width="930"/>
@@ -80,7 +80,7 @@
     <div id="foot">
         <img src="/static/images/p8.jpg" width="960" height="70"/>
     </div>
-   <a href="#top" style="display:block;position:fixed;right:50px; bottom:20px;"><img src="images/返回顶部1.png"  width="100" height="110" onmouseover="this.src='images/返回顶部2.png';"onmouseout="this.src='images/返回顶部1.png';"/></a>
+   <a href="#top" style="display:block;position:fixed;right:50px; bottom:20px;"><img src="/static/images/返回顶部1.png"  width="100" height="110" onmouseover="this.src='/static/images/返回顶部2.png';"onmouseout="this.src='/static/images/返回顶部1.png';"/></a>
 </div>
 </body>
 </html>

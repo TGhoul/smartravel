@@ -7,7 +7,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 
 #shang{
    float:right;
-   margin-top:10px;
+   margin-top:17px;
    padding:5px 2px;
    background:white;
    height:30px;
@@ -26,7 +26,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
    background-color:white;
    color:#e75659;}
 #container{width:960px;         
-   margin:35px auto;
+   margin:38px auto;
    background-color:white;}
 
 #top2{height:60px;
@@ -63,7 +63,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 
 
 /* banner-box */
-.banner-box{width:960px;height:360px;position:relative;overflow:hidden;margin-top:48px;}
+.banner-box{width:960px;height:360px;position:relative;overflow:hidden;margin-top:40px;}
 .banner-box .bd{ width:100% !important;}
 .banner-box .bd li .m-width {width:960px;margin:0 auto;overflow:hidden;}
 .banner-box .bd li{width:100% !important;height:360px;}

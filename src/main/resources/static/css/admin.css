@@ -1,5 +1,5 @@
-﻿
-
+#body{text-align:center;
+height:3000px;}
 #shang{
    float:right;
    margin-top:10px;
@@ -20,14 +20,15 @@
 #shang a:hover{
    background-color:white;
    color:#e75659;}
-   
+
 #container{width:960px;         
-   margin:35px auto;
+   margin:40px auto;
    background-color:white;}
 #top2{height:60px;
    background-color:white;
-   text-align:right;
-   position:absolute;}
+   text-align:center;
+   position:absolute;
+   margin-left: 22px;}
 #top2 ul {
    list-style-type:none;
    font-size:22px;
@@ -54,23 +55,47 @@
 #top2  li a:hover{
    background-color:white;
    color:#4d5697;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.p{padding-left: 10px;}
+#navileft{
+	float:left;
+	width:180px; 
+	height:400px;}
+#navileft a{width:180px;
+    height:50px;
+	text-decoration: none;
+    display:block;;
+	font-size:18px;
+	color:#2e4e7e;
+	font-family: 宋体;
+	font-weight:bold;
+    text-align: center;
+    padding-top: 28px;}
+#navileft a:hover{
+   background-color:aliceblue;
+   font-style:bolder;}
+#navileft  ul{list-style-type:none;
+   margin:0px;
+   padding: 0;}
+#navileft  ul li{
+	text-align: center;
+	margin: 0;
+   padding: 0;}	
+#naviright{float:right;
+	width:780px; 
+	height:1000px;}
+#n{text-align: center;
+  width:250px;
+  height: 30px;
+  border: 1px solid #efefef;
+  background: #efefef;}
+#m{text-align: center;
+  width:250px;
+  height: 80px;
+background-color:aliceblue;}
+#m a:link,#m a:visited{
+   color:red;}
+#m a:hover{
+   color:#e75659;}
 
 
 
