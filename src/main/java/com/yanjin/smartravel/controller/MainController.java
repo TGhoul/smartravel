@@ -24,7 +24,7 @@ public class MainController {
     }
 
     /**
-     * 15-25岁
+     * 10-25岁
      * @return
      */
     @RequestMapping("/10-25")

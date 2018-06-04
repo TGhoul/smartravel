@@ -80,9 +80,12 @@ height:3000px;}
 	text-align: center;
 	margin: 0;
    padding: 0;}	
-#naviright{float:right;
+#naviright1{float:right;
 	width:780px; 
 	height:1000px;}
+#naviright2{float:right;
+    width:780px;
+    height:500px;}
 #n{text-align: center;
   width:250px;
   height: 30px;

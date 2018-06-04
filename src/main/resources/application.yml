@@ -1,17 +1,22 @@
+#项目启动端口号
 server:
   port: 8088
+#数据源配置信息
 spring:
   datasource:
     username: root
     password: jocell
     driver-class-name: com.mysql.jdbc.Driver
+#数据库访问地址
     url: jdbc:mysql://121.40.138.135:3306/smartravel
+#静态文件的映射路径
   mvc:
       static-path-pattern: /static/**
+#freemarker的配置信息
   freemarker:
       cache: false
       suffix: .ftl
-  #返回时间格式化
+#返回时间格式化
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

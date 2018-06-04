@@ -50,8 +50,8 @@
                         <a href="#" id="e">
                             深圳世界之窗-1日游
                         </a>
-                    </div>
-                    <img src="/static/images/价格1.jpg" />
+                    </div><br/>
+                    <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>
                 </a>
             </td>
             <td onclick="location.href = '/smartravel/dsn';">
@@ -60,8 +60,8 @@
                         <a href="/smartravel/dsn" target="-blank" id="e">
                             上海迪士尼-1日游
                         </a>
-                    </div>
-                    <img src="/static/images/价格3.jpg" />
+                    </div><br/>
+                    <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>
                 </a>
             </td>
             <td>
@@ -70,8 +70,8 @@
                         <a href="#" id="e">
                             捷克布拉格婚旅5晚7日
                         </a>
-                    </div>
-                    <img src="/static/images/价格1.jpg" />
+                    </div><br/>
+                    <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>
                 </a>
             </td>
             <td onclick="location.href = '/smartravel/stln';">
@@ -80,8 +80,8 @@
                         <a href="/smartravel/stln" target="-blank" id="e">
                             圣托里尼婚纱旅拍5晚7日
                         </a>
-                    </div>
-                    <img src="/static/images/价格2.jpg" />
+                    </div><br/>
+                    <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>
                 </a>
             </td>
             <td>
@@ -90,8 +90,8 @@
                         <a href="#" id="e">
                             常州中华恐龙园-1日游
                         </a>
-                    </div>
-                    <img src="/static/images/价格1.jpg" />
+                    </div><br/>
+                    <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>
                 </a>
             </td>
             <td>
@@ -100,13 +100,13 @@
                         <a href="#" id="e">
                             日本哆啦A梦列车
                         </a>
-                    </div>
-                    <img src="/static/images/价格1.jpg" />
-                </a>
+                    </div><br/>
+                    <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>
             </td>
         </tr>
     </table>
 </div>
+
 
 
 <img id="b" src="/static/images/p1.png" height="200" width="200" onmouseover="this.src='/static/images/p10.png';"

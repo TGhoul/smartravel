@@ -24,9 +24,10 @@
     <div id="navileft" style="background: url(/static/images/left1.jpg) ;margin-top:60px;">
         <ul>
             <li id="content2" onmouseover="changeContent(this)"><a href="#3">订单管理</a></li>
+            <li id="content2" onmouseover="changeContent(this)"><a href="#3">线路上新</a></li>
         </ul>
     </div>
-    <div id="naviright" style="background-color:aliceblue ;margin-top:60px;">
+    <div id="naviright1" style="background-color:aliceblue ;margin-top:60px;">
         <img src="/static/images/admin.jpg"/>
         <table>
             <tr>
@@ -60,6 +61,22 @@
             </table>
         </div>
     </div>
+
+    <form id="naviright2" style="background-color:aliceblue ;margin-top:60px;">
+        <img src="/static/images/admin.jpg"/>
+
+        添加标题：<input  type="text"  name="username"
+                              style="width:300px;height:33px; "/>
+        添加价格：<input  type="text"  name="price"
+                              style="width:300px;height:33px; "/>
+        添加图片：<input  type="file" name="user-file"
+                       style="width:305px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 25px;"/><br/>
+       <input  type="button" value="保存"
+                            style="width:80px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 25px;"/>
+
+
+
+
 
     <script>
         //渲染退款订单列表
