@@ -1,3 +1,6 @@
+img:
+  location: classpath:/public/
+
 #项目启动端口号
 server:
   port: 8088
@@ -12,6 +15,7 @@ spring:
 #静态文件的映射路径
   mvc:
       static-path-pattern: /static/**
+
 #freemarker的配置信息
   freemarker:
       cache: false

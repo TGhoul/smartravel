@@ -1,6 +1,10 @@
 package com.yanjin.smartravel.controller;
 
+import com.yanjin.smartravel.domain.Scenic;
+import com.yanjin.smartravel.serivce.ScenicService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
@@ -14,6 +18,8 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/smartravel")
 public class MainController {
 
+    @Autowired
+    private ScenicService scenicService;
     /**
      * 首页
      * @return
@@ -90,9 +96,11 @@ public class MainController {
      * 门票预定
      * @return
      */
-    @RequestMapping("/dsn")
-    public String dsn() {
-        return "dsn";
+    @RequestMapping("/yd")
+    public String dsn(Model model, Long id) {
+        Scenic scenic = scenicService.findOne(id);
+        model.addAttribute("scenic", scenic);
+        return "yd";
     }
 
     /**
@@ -147,5 +155,14 @@ public class MainController {
     @RequestMapping("/stln")
     public String stln() {
         return "stln";
+    }
+
+    /**
+     * 管理员入口
+     * @return
+     */
+    @RequestMapping("/admin/add")
+    public String add() {
+        return "add_travel";
     }
 }
