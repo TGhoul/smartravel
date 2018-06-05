@@ -127,7 +127,7 @@
         if (res.isSuccess === 1) {
             var scenicList = res.data;
             var html = '';
-            for (var i = 0; i < scenicList.length; i++) {
+            for (var i = 0; i < 5; i++) {
                 html += '<td>\n' +
                         '    <a href="/smartravel/yd?id='+ scenicList[i].id +'"><img src="'+ scenicList[i].summaryImg +'" width="213" height="137"/>\n' +
                         '        <div id="lx">\n' +
