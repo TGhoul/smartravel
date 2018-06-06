@@ -20,13 +20,13 @@
 </table>
 
 <div id="container">
-    <div id="navileft" style="background: url(/static/images/left1.jpg) ;margin-top:60px;">
+    <div id="navileft" style="background: url(/static/images/left1.jpg) no-repeat;margin-top: 60px;">
         <ul>
             <li id="content2" onmouseover="changeContent(this)"><a class="btn1" href="#3">订单管理</a></li>
             <li id="content2" onmouseover="changeContent(this)"><a class="btn2" href="#3">线路上新</a></li>
         </ul>
     </div>
-    <div id="naviright1" style="background-color:aliceblue ;margin-top:60px;">
+    <div id="naviright1" style="background-color:aliceblue ;margin-top:60px;height:650px;width:780px;float: right;">
         <img src="/static/images/admin.jpg"/>
         <table>
             <tr>
@@ -61,18 +61,29 @@
         </div>
     </div>
 
-    <form id="naviright2" style="background-color:aliceblue ;margin-top:60px;display: none">
+    <div id="naviright2" style="background-color:aliceblue ;margin-top:60px;display: none;height:650px;width:780px;float: right;">
         <img src="/static/images/admin.jpg"/>
         <input type="hidden" class="img-upload" data-url="">
         添加标题：<input type="text" class="name" name="username"
                     style="width:300px;height:33px; "/>
         添加价格：<input type="text" class="price" name="price"
+                    style="width:300px;height:33px; "/><br /><br />
+        出发日期：<input type="date" class="date" name="date"
+                    style="width:300px;height:33px; "/>
+        结束日期：<input type="date" class="date" name="date"
                     style="width:300px;height:33px; "/>
         添加图片：<input id="fileupload" type="file" name="imgfile" data-url="/smartravel/upload/img" multiple
-                    style="width:305px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 25px;"/><br/>
+                    style="width:305px;height:40px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 25px;"/><br/><br/>
+        添加详情：<textarea row="5"  cols="20" type="text" class="text" name="textarea"
+                    style="width:300px;height:100px; "></textarea><br/><br/>
+        <select style="width:305px;height:40px;">
+            <option value="sn">省内推荐</option>
+            <option value="gn">国内推荐</option>
+            <option value="gw">国外推荐</option>
+        </select>
         <input class="btn-save" type="button" value="保存"
-               style="width:80px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 25px;"/>
-    </form>
+               style="width:80px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 15px;"/>
+    </div>
 
     <script src="/static/js/jquery-3.3.1.min.js"></script>
     <script src="/static/js/jquery.ui.widget.js"></script>

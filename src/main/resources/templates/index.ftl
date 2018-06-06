@@ -4,7 +4,7 @@
     <title>智慧旅游-网站首页</title>
     <link href="/static/css/index.css" rel="stylesheet"/>
 </head>
-<body style="background:url(/static/images/st.jpg) center 0 no-repeat ;width:100%;height:100%;">
+<body style="background:url(/static/images/sy.jpg) center 0 no-repeat ;width:100%;height:100%;">
 <a name="top"></a>
 
 <div id="top2">
@@ -42,7 +42,7 @@
 <br/>
 <div style="background-color: white; margin-top: 100px;
       margin-top: 305px;">
-    <table class="table3">
+    <table class="table1">
         <tr class="scenic-list">
             <#--<td>-->
                 <#--<a href="#"><img src="/static/images/sjzc.jpg" width="213" height="137"/>-->
@@ -106,6 +106,138 @@
         </tr>
     </table>
 </div>
+<div style="background-color: white;
+      margin-top: 200px;">
+    <table class="table2">
+        <tr class="scenic-list">
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/sjzc.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="#" id="e">-->
+        <#--深圳世界之窗-1日游-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td onclick="location.href = '/smartravel/dsn';">-->
+        <#--<a href="/smartravel/dsn" target="-blank"><img src="/static/images/dsn.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="/smartravel/dsn" target="-blank" id="e">-->
+        <#--上海迪士尼-1日游-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/hi9.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="#" id="e">-->
+        <#--捷克布拉格婚旅5晚7日-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td onclick="location.href = '/smartravel/stln';">-->
+        <#--<a href="/smartravel/stln" target="-blank"><img src="/static/images/hl5.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="/smartravel/stln" target="-blank" id="e">-->
+        <#--圣托里尼婚纱旅拍5晚7日-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/kl1.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="#" id="e">-->
+        <#--常州中华恐龙园-1日游-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/xz1.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="/smartravel/yd" id="e">-->
+        <#--日本哆啦A梦列车-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</td>-->
+        </tr>
+    </table>
+</div>
+<div style="background-color: white;
+      margin-top: 200px;">
+    <table class="table3">
+        <tr class="scenic-list">
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/sjzc.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="#" id="e">-->
+        <#--深圳世界之窗-1日游-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td onclick="location.href = '/smartravel/dsn';">-->
+        <#--<a href="/smartravel/dsn" target="-blank"><img src="/static/images/dsn.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="/smartravel/dsn" target="-blank" id="e">-->
+        <#--上海迪士尼-1日游-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/hi9.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="#" id="e">-->
+        <#--捷克布拉格婚旅5晚7日-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td onclick="location.href = '/smartravel/stln';">-->
+        <#--<a href="/smartravel/stln" target="-blank"><img src="/static/images/hl5.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="/smartravel/stln" target="-blank" id="e">-->
+        <#--圣托里尼婚纱旅拍5晚7日-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/kl1.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="#" id="e">-->
+        <#--常州中华恐龙园-1日游-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</a>-->
+        <#--</td>-->
+        <#--<td>-->
+        <#--<a href="#"><img src="/static/images/xz1.jpg" width="213" height="137"/>-->
+        <#--<div id="lx">-->
+        <#--<a href="/smartravel/yd" id="e">-->
+        <#--日本哆啦A梦列车-->
+        <#--</a>-->
+        <#--</div><br/>-->
+        <#--<b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">2000.00</b>-->
+        <#--</td>-->
+        </tr>
+    </table>
+</div>
 
 
 
@@ -127,7 +259,7 @@
         if (res.isSuccess === 1) {
             var scenicList = res.data;
             var html = '';
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 6; i++) {
                 html += '<td>\n' +
                         '    <a href="/smartravel/yd?id='+ scenicList[i].id +'"><img src="'+ scenicList[i].summaryImg +'" width="213" height="137"/>\n' +
                         '        <div id="lx">\n' +

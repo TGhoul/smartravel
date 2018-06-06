@@ -35,7 +35,7 @@
         </ul>
     </div>
 </div>
-<div style="width:960px; margin:40px auto;
+<div style="width:960px; margin:0 auto;
    background-color:white;">
     <table>
         <tr>
@@ -44,11 +44,14 @@
             </td>
             <td align="right">
                 <input type="hidden" class="scenic" data-id="${scenic.id}">
-                <b style="float: left;font-size: 25px;margin-left: 40px;margin-top:20px;font-family: 黑体">${scenic.name}</b>
+                <b style="float: left;font-size: 25px;margin-left: 40px;margin-top:53px;font-family: 黑体">${scenic.name}</b>
                 <br/> <br/> <br/>
-                <b style="float: left;  background-color:#fff9ed;color:#ff6300;font-size: 30px;width:350px;height: 60px;text-align: center;padding-top: 20px;">价格：${scenic.price}</b>
+                <b style="float: left;  background-color:#fff9ed;color:#ff6300;font-size: 30px;width:350px;height: 60px;text-align: center;padding-top: 20px;">价格：¥${scenic.price}</b>
+                <b style="float: left;font-size: 15px;margin-top:20px;font-family: 黑体;width:200px;">出发日期：</b><br /><br />
+                <b style="float: left;font-size: 15px;margin-top:20px;font-family: 黑体;width:200px;">结束日期：</b><br /><br />
+                <b style="float: left;font-size: 15px;margin-top:20px;font-family: 黑体;width:200px;">路线详情：</b><br /><br />
                 <input class="btn" type="button" value="立即预定"
-                       style="width:120px;height:45px;background:#f15609;color:white;font-size:18px; font-family:黑体;  border:1px solid #ba460c; border-radius:5px; margin-top: 20px;"/>
+                       style="width:120px;height:45px;background:#f15609;color:white;font-size:18px; font-family:黑体;  border:1px solid #ba460c; border-radius:5px; margin-top: 135px;"/>
             </td>
         </tr>
     </table>

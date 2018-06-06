@@ -56,7 +56,7 @@
                     <a href="#">
                         <img src="/static/images/dsn.jpg" width="210" height="120"/>
                         <div id="lx">
-                            <a href="" id="e">
+                            <a href = "/smartravel/dsn" id="e">
                                 上海迪士尼-2日游
                             </a>
                         </div>
