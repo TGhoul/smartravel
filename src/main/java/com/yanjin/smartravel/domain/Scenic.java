@@ -29,6 +29,15 @@ public class Scenic {
     private String summaryImg;
 
     private Date createTime;
+
+    private Date startDate;
+
+    private Date endDate;
+
+    private String detail;
+
+    /** 0省内推荐 1国内推荐 2国外推荐  */
+    private Integer type;
 }
 
 

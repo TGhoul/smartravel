@@ -43,7 +43,7 @@
 <div style="background-color: white; margin-top: 100px;
       margin-top: 305px;">
     <table class="table1">
-        <tr class="scenic-list">
+        <tr class="scenic-list-0">
             <#--<td>-->
                 <#--<a href="#"><img src="/static/images/sjzc.jpg" width="213" height="137"/>-->
                     <#--<div id="lx">-->
@@ -109,7 +109,7 @@
 <div style="background-color: white;
       margin-top: 200px;">
     <table class="table2">
-        <tr class="scenic-list">
+        <tr class="scenic-list-1">
         <#--<td>-->
         <#--<a href="#"><img src="/static/images/sjzc.jpg" width="213" height="137"/>-->
         <#--<div id="lx">-->
@@ -175,7 +175,7 @@
 <div style="background-color: white;
       margin-top: 200px;">
     <table class="table3">
-        <tr class="scenic-list">
+        <tr class="scenic-list-2">
         <#--<td>-->
         <#--<a href="#"><img src="/static/images/sjzc.jpg" width="213" height="137"/>-->
         <#--<div id="lx">-->
@@ -258,21 +258,55 @@
     $.post('/smartravel/scenic/list', function (res) {
         if (res.isSuccess === 1) {
             var scenicList = res.data;
-            var html = '';
-            for (var i = 0; i < 6; i++) {
-                html += '<td>\n' +
-                        '    <a href="/smartravel/yd?id='+ scenicList[i].id +'"><img src="'+ scenicList[i].summaryImg +'" width="213" height="137"/>\n' +
-                        '        <div id="lx">\n' +
-                        '            <a href="/smartravel/yd?id='+ scenicList[i].id +'" id="e">\n' +
-                        '                '+ scenicList[i].name +'\n' +
-                        '            </a>\n' +
-                        '        </div><br/>\n' +
-                        '        <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">'+ scenicList[i].price +'</b>\n' +
-                        '    </a>\n' +
-                        '</td>';
+            var html0 = '';
+            var html1 = '';
+            var html2 = '';
+            for (var i = 0; i < scenicList.length; i++) {
+                if (scenicList[i].type === 0) {
+                    html0 += '<td>\n' +
+                            '    <a href="/smartravel/yd?id='+ scenicList[i].id +'"><img src="'+ scenicList[i].summaryImg +'" width="213" height="137"/>\n' +
+                            '        <div id="lx">\n' +
+                            '            <a href="/smartravel/yd?id='+ scenicList[i].id +'" id="e">\n' +
+                            '                '+ scenicList[i].name +'\n' +
+                            '            </a>\n' +
+                            '        </div><br/>\n' +
+                            '        <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">'+ scenicList[i].price +'</b>\n' +
+                            '    </a>\n' +
+                            '</td>';
+                }
+
+                if (scenicList[i].type === 1) {
+                    html1 += '<td>\n' +
+                            '    <a href="/smartravel/yd?id='+ scenicList[i].id +'"><img src="'+ scenicList[i].summaryImg +'" width="213" height="137"/>\n' +
+                            '        <div id="lx">\n' +
+                            '            <a href="/smartravel/yd?id='+ scenicList[i].id +'" id="e">\n' +
+                            '                '+ scenicList[i].name +'\n' +
+                            '            </a>\n' +
+                            '        </div><br/>\n' +
+                            '        <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">'+ scenicList[i].price +'</b>\n' +
+                            '    </a>\n' +
+                            '</td>';
+                }
+
+                if (scenicList[i].type === 2) {
+                    html2 += '<td>\n' +
+                            '    <a href="/smartravel/yd?id='+ scenicList[i].id +'"><img src="'+ scenicList[i].summaryImg +'" width="213" height="137"/>\n' +
+                            '        <div id="lx">\n' +
+                            '            <a href="/smartravel/yd?id='+ scenicList[i].id +'" id="e">\n' +
+                            '                '+ scenicList[i].name +'\n' +
+                            '            </a>\n' +
+                            '        </div><br/>\n' +
+                            '        <b style="background-color: white;color:#9c9a9b;">价格：</b><b style="background-color:white;color:#de1215;">'+ scenicList[i].price +'</b>\n' +
+                            '    </a>\n' +
+                            '</td>';
+                }
             }
-            $('.scenic-list').empty();
-            $('.scenic-list').append(html);
+            $('.scenic-list-0').empty();
+            $('.scenic-list-1').empty();
+            $('.scenic-list-2').empty();
+            $('.scenic-list-0').append(html0);
+            $('.scenic-list-1').append(html1);
+            $('.scenic-list-2').append(html2);
         }
     });
 

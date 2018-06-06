@@ -158,6 +158,15 @@ public class MainController {
     }
 
     /**
+     * 迪士尼
+     * @return
+     */
+    @RequestMapping("/dsn")
+    public String dsn() {
+        return "dsn";
+    }
+
+    /**
      * 管理员入口
      * @return
      */

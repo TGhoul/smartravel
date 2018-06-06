@@ -68,18 +68,18 @@
                     style="width:300px;height:33px; "/>
         添加价格：<input type="text" class="price" name="price"
                     style="width:300px;height:33px; "/><br /><br />
-        出发日期：<input type="date" class="date" name="date"
-                    style="width:300px;height:33px; "/>
-        结束日期：<input type="date" class="date" name="date"
-                    style="width:300px;height:33px; "/>
+        出发日期：<input type="text" class="startDate" name="date"
+                    style="width:300px;height:33px; " placeholder="选择出发日期"/>
+        结束日期：<input type="text" class="endDate" name="date"
+                    style="width:300px;height:33px; " placeholder="选择结束日期"/>
         添加图片：<input id="fileupload" type="file" name="imgfile" data-url="/smartravel/upload/img" multiple
                     style="width:305px;height:40px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 25px;"/><br/><br/>
-        添加详情：<textarea row="5"  cols="20" type="text" class="text" name="textarea"
+        添加详情：<textarea row="5"  cols="20" type="text" class="detail" name="textarea"
                     style="width:300px;height:100px; "></textarea><br/><br/>
-        <select style="width:305px;height:40px;">
-            <option value="sn">省内推荐</option>
-            <option value="gn">国内推荐</option>
-            <option value="gw">国外推荐</option>
+        <select class="type" style="width:305px;height:40px;">
+            <option value="0">省内推荐</option>
+            <option value="1">国内推荐</option>
+            <option value="2">国外推荐</option>
         </select>
         <input class="btn-save" type="button" value="保存"
                style="width:80px;height:45px;background:#0594a2;color:white;font-size:18px; font-family:黑体;  border:2px solid #057380; border-radius:5px;margin-top: 15px;"/>
@@ -89,6 +89,7 @@
     <script src="/static/js/jquery.ui.widget.js"></script>
     <script src="/static/js/jquery.iframe-transport.js"></script>
     <script src="/static/js/jquery.fileupload.js"></script>
+    <script src="/static/laydate/laydate.js"></script>
     <script>
         //上传图片
         $(function () {
@@ -104,13 +105,32 @@
                     $('.img-upload').attr('data-url', imgurl);
                 }
             });
+
+            //时间选择插件
+            laydate.render({
+                elem: '.startDate', //指定元素
+                format: 'yyyy-MM-dd'
+            });
+
+            laydate.render({
+                elem: '.endDate', //指定元素
+                format: 'yyyy-MM-dd'
+            });
         });
         //保存旅游线路
         $('.btn-save').on("click", function () {
             var imgurl = $('.img-upload').attr('data-url');
             var price = $('.price').val();
             var name = $('.name').val();
-            $.post('/smartravel/scenic/save', {name: name, summaryImg: imgurl, price: price}, function (res) {
+            var startDate = $('.startDate').val();
+            var endDate = $('.endDate').val();
+            var type = $('.type').val();
+            var detail = $('.detail').val();
+            $.post('/smartravel/scenic/save', {
+                name: name, summaryImg: imgurl,
+                price: price, startDate: startDate,
+                endDate: endDate, type: type, detail: detail
+            }, function (res) {
                 if (res.isSuccess === 1) {
                     alert('保存成功');
                 } else {

@@ -7,6 +7,7 @@ import com.yanjin.smartravel.serivce.ScenicPreOrderService;
 import com.yanjin.smartravel.serivce.ScenicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,12 +38,20 @@ public class ScenicController {
     @RequestMapping("/save")
     public RestResponse saveScenic(@RequestParam String name,
                                    @RequestParam Double price,
-                                   @RequestParam String summaryImg) {
+                                   @RequestParam String summaryImg,
+                                   @RequestParam Integer type,
+                                   @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date startDate,
+                                   @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate,
+                                   @RequestParam  String detail) {
         RestResponse restResponse = new RestResponse();
         Scenic scenic = new Scenic();
         scenic.setPrice(price);
         scenic.setSummaryImg(summaryImg);
         scenic.setName(name);
+        scenic.setType(type);
+        scenic.setDetail(detail);
+        scenic.setStartDate(startDate);
+        scenic.setEndDate(endDate);
         scenic.setCreateTime(new Date());
         scenicService.save(scenic);
         restResponse.setIsSuccess(1);
